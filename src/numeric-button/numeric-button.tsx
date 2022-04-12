@@ -11,7 +11,11 @@ export const NumericButton: React.FC = () => {
             <div className="four numeric">4</div>
         </div>
         <div className="buttonRow">
-            <div />
+            <div className="five numeric">5</div>
         </div>
-        <div className="buttonRow" /></div>;
+        <div className="buttonRow">
+            <div className="six numeric">6</div>
+            <div className="seven numeric">7</div>
+            <div className="eight numeric">8</div>
+        </div></div>;
 };
