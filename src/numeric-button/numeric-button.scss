@@ -1,13 +1,61 @@
+@font-face {
+    font-family: "Madefor-Text";
+    src: url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/WixMadefor/v3/WixMadeforTextVF_W_Wght.woff2 ") format('woff2-variations'),
+        url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/WixMadefor/v3/WixMadeforText_W_Rg.woff2 ") format("woff2 "),
+        url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/WixMadefor/v3/WixMadeforText_W_Rg.woff ") format("woff ");
+    font-weight: 400;
+}
+
 .numeric-button {
     &__root {
-        border-radius: 30px;
-        background: #DCD9BF;
-        width: 250px;
-        height: 60px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Madefor-Text, sans-serif;
+        justify-content: space-between;
+        align-items: stretch;
+        font-weight: 400;
+        font-family: Tahoma, sans-serif;
+        font-size: 30px;
+        flex-direction: column;
 
     }
+}
+
+.numeric {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.one {
+
+    background: #F486C9;
+    width: 60px;
+    height: 60px;
+}
+
+.two {
+    background: #92D0AB;
+    width: 180px;
+    height: 60px;
+}
+
+.three {
+    width: 120px;
+    height: 60px;
+    background: #FFB615;
+}
+
+.four {
+    background: #6A55A2;
+    width: 120px;
+    height: 60px;
 }
