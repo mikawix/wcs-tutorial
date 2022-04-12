@@ -2,7 +2,7 @@ import React from 'react';
 import './numeric-button.scss';
 
 export const NumericButton: React.FC = () => {
-    return <div className='numeric-button__root'>
+    return <div className="cover"> <div className='numeric-button__root'>
         <div className="buttonRow">
             <div className="one numeric">1</div>
             <div className="two numeric">2</div></div>
@@ -17,5 +17,6 @@ export const NumericButton: React.FC = () => {
             <div className="six numeric">6</div>
             <div className="seven numeric">7</div>
             <div className="eight numeric">8</div>
-        </div></div>;
+        </div></div>
+    </div>;
 };
