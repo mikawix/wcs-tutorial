@@ -1,0 +1,19 @@
+.med-button {
+    &__root {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        font-weight: 400;
+        font-family: Tahoma, sans-serif;
+        font-size: 30px;
+        color: #FFFFFF;
+        background-color: #6955A2;
+        width: 120px;
+        height: 60px;
+        border: 2px solid #6955A2;
+        box-sizing: border-box;
+        border-radius: 30px;
+    }
+}
