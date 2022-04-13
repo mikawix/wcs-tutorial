@@ -17,6 +17,7 @@ export const NumericButton: React.FC = () => {
             <div className="six numeric">6</div>
             <div className="seven numeric">7</div>
             <div className="eight numeric">8</div>
-        </div></div>
+        </div>
+    </div>
     </div>;
 };

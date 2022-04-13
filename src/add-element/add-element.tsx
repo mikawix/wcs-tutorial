@@ -10,7 +10,7 @@ export const AddElement: React.FC = () => {
                 <MedButton />
                 <RoundButton /></div>
             <div className="dragHere">
-                <RoundButton></RoundButton>
+                <RoundButton />
                 <MedButton />
             </div>
             <div className="elementRow">
