@@ -1,7 +1,6 @@
-# blank-scss
+# wcs tutorial
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It includes a single React component to start your project with, a sample [`wcs.config.js`](https://github.com/studio-templates/blank-scss/blob/main/wcs.config.js) with preconfigured keys, a `package.json` file to describe the project's packages and dependencies, and a folder and component structure to put everything neatly in its place.
-
+This project is an interactive tutorial to get started with wix component studio. Each component is a lesson that will help you learn the main concepts of wix component studio.
 This project includes Sass support for writing nested rules, style variables, imports, etc.
 
 # Using the Project
