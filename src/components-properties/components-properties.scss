@@ -1,12 +1,29 @@
 .components-properties {
     &__root {
-    background: #191B1C;
-    width: 410px;
-    height: 560px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    flex-direction: column;
+        background: #191B1C;
+        width: 410px;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        flex-direction: column;
     }
+}
+
+.CompContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-weight: 400;
+    font-family: Tahoma, sans-serif;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+.CompRow {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
 }
