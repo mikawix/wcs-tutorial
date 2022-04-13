@@ -1,0 +1,8 @@
+import React from 'react';
+import './spacing.scss';
+import { MedButton } from '../med-button/med-button';
+
+export const Spacing: React.FC = () => {
+    return <div className='spacing__root'>
+        <div className="giveSpace">Give Me Some Space</div></div>;
+};

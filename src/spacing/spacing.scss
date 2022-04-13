@@ -1,0 +1,21 @@
+.spacing {
+    &__root {
+        background: #191B1C;
+        width: 410px;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        flex-direction: column;
+    }
+}
+
+.giveSpace {
+    background: #A09D2A;
+    border-radius: 100px;
+    padding: 0px;
+    font-size: 30px;
+    overflow: auto;
+    font-weight: 500;
+}
