@@ -4,5 +4,9 @@ import { Spacing } from '../../../spacing/spacing';
 
 export default createBoard({
     name: 'Spacing',
-    Board: () => <Spacing />
+    Board: () => <Spacing />,
+    environmentProps: {
+        windowWidth: 1024,
+        windowHeight: 768
+    }
 });
