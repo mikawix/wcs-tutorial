@@ -11,7 +11,8 @@ export const Lesson1: React.FC = () => {
             </div>
             <div className="l1task">
                 <li>This is a board. To edit or style elements, select them on stage or on the layer panel to the left.		</li>
-                <li>When element is selected, you can inspect or edit its style, or change properties on the right panel.</li>
+                <li>When element is selected,you can inspect or edit its style, or change properties on theright panel.</li>
+                <li>To preview, click on the select/preview toggle or click Option+V and click on the image to see how it acts.</li>
             </div>
         </div>
         <div className="lesson1Card">
