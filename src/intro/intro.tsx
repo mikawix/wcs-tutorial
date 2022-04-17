@@ -6,8 +6,6 @@ export const Intro: React.FC = () => {
     return (
         <div className='intro'>
             <img src={foo} />
-            <div>
-                <div className="circleS" />
-            </div></div>
+            <div className="flexRow"></div></div>
     )
 };
