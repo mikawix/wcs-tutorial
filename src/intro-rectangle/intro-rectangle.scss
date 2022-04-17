@@ -1,7 +1,42 @@
 .rectangle {
-
     border-radius: 100px;
     background: #FF2F2F;
     width: 60px;
     height: 60px;
+}
+
+.smallCircle{
+    background: #FF2F2F;
+    width: 60px;
+    height: 60px;  
+}
+
+.medCircle{
+    background: #268040;
+    width: 85px;
+    height: 85px;    
+}
+
+.largeCircle{
+    background: #FFB615;
+    width: 100px;
+    height: 100px;  
+}
+
+.smallEllipse{
+    background: #6A55A2;
+    width: 120px;
+    height: 60px;  
+}
+
+.medEllipse{
+    background: #FA9DBC;
+    width: 180px;
+    height: 60px;  
+}
+
+.largeEllipse{
+    background: #DCD9BF;
+    width: 260px;
+    height: 60px;  
 }
