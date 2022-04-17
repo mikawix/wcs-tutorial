@@ -1,9 +1,71 @@
 @font-face {
-    font-family: "Madefor-Text";
-    src: url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/WixMadefor/v3/WixMadeforTextVF_W_Wght.woff2 ") format('woff2-variations'),
-        url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/WixMadefor/v3/WixMadeforText_W_Rg.woff2 ") format("woff2 "),
-        url("//static.parastorage.com/services/santa-resources/resources/viewer/user-site-fonts/fonts/WixMadefor/v3/WixMadeforText_W_Rg.woff ") format("woff ");
+    font-family: "WixMadeForText";
+    font-display: swap;
+    font-style: normal;
     font-weight: 400;
+    src: url("//wixmp-01fd07bebf1fbe0cb8eea7be.wixmp.com/pages/wix-fonts/1.0.6/media/WixMadeforText_W_Rg.5a5798be.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "WixMadeForText";
+    font-display: swap;
+    font-style: italic;
+    font-weight: 400;
+    src: url("//wixmp-01fd07bebf1fbe0cb8eea7be.wixmp.com/pages/wix-fonts/1.0.6/media/WixMadeforText_W_Rg_It.12f3cd9d.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "WixMadeForText";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: url("//wixmp-01fd07bebf1fbe0cb8eea7be.wixmp.com/pages/wix-fonts/1.0.6/media/WixMadeforText_W_Bd.9d07f9d7.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "WixMadeForText";
+    font-display: swap;
+    font-style: italic;
+    font-weight: 700;
+    src: url("//wixmp-01fd07bebf1fbe0cb8eea7be.wixmp.com/pages/wix-fonts/1.0.6/media/WixMadeforText_W_Bd_It.31766fc9.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "WixMadeForText";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 800;
+    src: url("//wixmp-01fd07bebf1fbe0cb8eea7be.wixmp.com/pages/wix-fonts/1.0.6/media/WixMadeforText_W_XBd.bcb42c9a.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "WixMadeForText";
+    font-display: swap;
+    font-style: italic;
+    font-weight: 800;
+    src: url("//wixmp-01fd07bebf1fbe0cb8eea7be.wixmp.com/pages/wix-fonts/1.0.6/media/WixMadeforText_W_XBd_It.9d580e0e.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "WixMadeForDisplay";
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url("//wixmp-01fd07bebf1fbe0cb8eea7be.wixmp.com/pages/wix-fonts/1.0.6/media/WixMadeforDisplay_W_Rg.ff9d13f7.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "WixMadeForDisplay";
+    font-display: swap;
+    font-weight: 700;
+    src: url("//wixmp-01fd07bebf1fbe0cb8eea7be.wixmp.com/pages/wix-fonts/1.0.6/media/WixMadeforDisplay_W_Bd.ef7750b0.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "WixMadeForDisplay";
+    font-display: swap;
+    font-weight: 800;
+    src: url("//wixmp-01fd07bebf1fbe0cb8eea7be.wixmp.com/pages/wix-fonts/1.0.6/media/WixMadeforDisplay_W_XBd.2d185bee.woff2") format("woff2");
 }
 
 .numeric-button {
@@ -12,7 +74,6 @@
         justify-content: space-between;
         align-items: stretch;
         font-weight: 400;
-        font-family: Tahoma, sans-serif;
         font-size: 30px;
         flex-direction: column;
 
@@ -26,6 +87,9 @@
     align-items: center;
     margin: 5px;
     border-radius: 30px;
+    font-family: WixMadeForText, sans-serif;
+    font-style: italic;
+
 }
 
 .buttonRow {
@@ -43,7 +107,7 @@
 }
 
 .two {
-    background: #76B48F ;
+    background: #76B48F;
     width: 180px;
     height: 60px;
 }
