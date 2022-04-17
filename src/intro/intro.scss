@@ -1,7 +1,6 @@
-
 .intro {
-        width: 400px;
-        height: 560px;
+    width: 400px;
+    height: 560px;
 }
 
 img {
@@ -9,4 +8,10 @@ img {
     height: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+.circleS {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
 }
