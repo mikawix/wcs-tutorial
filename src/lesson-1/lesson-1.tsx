@@ -1,6 +1,7 @@
 import React from 'react';
 import './lesson-1.scss';
 import { Intro } from '../intro/intro';
+import preview from '../assets/preview.png';
 
 export const Lesson1: React.FC = () => {
     return <div className='lesson-1__root'>
@@ -12,7 +13,8 @@ export const Lesson1: React.FC = () => {
             <div className="l1task">
                 <li>This is a board. To edit or style elements, select them on stage or on the layer panel to the left.		</li>
                 <li>When element is selected,you can inspect or edit its style, or change properties on theright panel.</li>
-                <li>To preview, click on the select/preview toggle or click Option+V and click on the image to see how it acts.</li>
+                <li>To preview, click on theselect/preview toggle or click Option+V and click on the image to see how it acts.<img src={preview} className="menu" />
+                </li>
             </div>
         </div>
         <div className="lesson1Card">
