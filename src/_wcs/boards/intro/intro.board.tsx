@@ -4,5 +4,9 @@ import { Intro } from '../../../intro/intro';
 
 export default createBoard({
     name: 'Intro',
-    Board: () => <Intro/>
+    Board: () => <Intro />,
+    environmentProps: {
+        windowWidth: 540,
+        windowHeight: 605
+    }
 });

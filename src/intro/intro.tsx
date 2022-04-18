@@ -8,7 +8,8 @@ export const Intro: React.FC = () => {
         <div className='intro'>
             <img src={welcome} />
             <IntroRectangle className="positionA" shape="ellipse" size="small"></IntroRectangle>
-            <IntroRectangle className="positionB" />
+            <IntroRectangle className="positionB" shape="ellipse" />
+            <IntroRectangle />
         </div>
     )
 };

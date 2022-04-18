@@ -13,14 +13,17 @@ img {
 .positionA {
     position: absolute;
     left: 15.01px;
-    top: 118.09px;
+    top: 120px;
     background: #B6C1F0;
     transform: rotate(-37.07deg);
+    z-index: 1;
 }
 
 .positionB {
-    left: 23.04px;
-    top: 58.11px;
     background: #92D0AB;
     transform: rotate(5.11deg);
+    position: absolute;
+    z-index: 0;
+    left: 23px;
+    top: 58px;
 }
