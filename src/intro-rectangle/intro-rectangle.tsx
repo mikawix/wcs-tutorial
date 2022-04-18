@@ -1,34 +1,38 @@
-import React, {useState} from 'react';
+import React, {useState, CSSProperties} from 'react';
 import './intro-rectangle.scss';
 
 export interface IntroRectabngleProps {
-    className?: 'string';
-    size?: 'small' | 'medium' | 'large';
     shape?: 'circle' | 'ellipse';
+    size?: 'small' | 'medium' | 'large';
+    left?: number;
+    top?: number;
+    zIndex?: number;
+    angle?: number;
+    backgroundColor?: string;
 }
 
 export const IntroRectangle: React.FC<IntroRectabngleProps> = ({
-    className='rectangle',
+    shape = 'circle',
     size = 'small',
-    shape = 'circle'
+    left = 0,
+    top = 0,
+    zIndex,
+    angle = 0,
+    backgroundColor = '#FF2F2F'
 }) => {
     const [visible, setVisible] = useState(true);
 
-    let recClass: string = 'rectangle';
-    
-    switch (size) {
-        case 'small':
-            recClass = shape === 'circle' ? 'smallCircle' : 'smallEllipse'
-            break;
-        case 'medium':
-            recClass = shape === 'circle' ? 'medCircle' : 'medEllipse'
-            break;
-        case 'large':
-            recClass = shape === 'circle' ? 'largeCircle' : 'largeEllipse'
-            break;
-    }
+    const className = 'intro-shape ' + shape + ' ' + size;
 
-    return (
-        visible ? <div onMouseEnter={() => setVisible(false)} className={recClass+" "+className}></div> : <span/>
-    );
+    const style: CSSProperties = {
+        visibility: visible ? 'visible': 'hidden',
+        left,
+        top,
+        zIndex,
+        backgroundColor,
+        transformOrigin: 'center',
+        transform: `rotate(${angle}deg)`
+    };
+
+    return <div onMouseEnter={() => setVisible(false)} className={className} style={style} />;
 };

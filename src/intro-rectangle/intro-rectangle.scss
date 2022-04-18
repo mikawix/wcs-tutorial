@@ -1,41 +1,38 @@
-.rectangle {
-    border-radius: 100px;
-    background-color: #FF2F2F;
-    width: 60px;
-    height: 60px;
+.intro-shape {
+    position: absolute;
 }
 
-.smallCircle{
+.circle.small {
     border-radius: 100px;
     width: 60px;
     height: 60px;  
 }
 
-.medCircle{
+.circle.medium {
     border-radius: 100px;
     width: 85px;
     height: 85px;    
 }
 
-.largeCircle{
+.circle.large {
     border-radius: 100px;
     width: 100px;
     height: 100px;  
 }
 
-.smallEllipse{
+.ellipse.small {
     border-radius: 100px;
     width: 120px;
     height: 60px;  
 }
 
-.medEllipse{
+.ellipse.medium {
     border-radius: 100px;
     width: 180px;
     height: 60px;  
 }
 
-.largeEllipse{
+.ellipse.large {
     border-radius: 100px;
     width: 260px;
     height: 60px;  
