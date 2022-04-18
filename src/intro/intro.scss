@@ -12,8 +12,8 @@ img {
 
 .positionA {
     position: absolute;
-    left: 15.01px;
-    top: 120px;
+    left: 1px;
+    top: 52px;
     background: #B6C1F0;
     transform: rotate(-37.07deg);
     z-index: 1;
@@ -26,4 +26,28 @@ img {
     z-index: 0;
     left: 23px;
     top: 58px;
+}
+
+.positionC {
+    position: absolute;
+    left: 122px;
+    top: 95px;
+    background: #DCD9BF;
+    transform: rotate(-62.33deg);
+    z-index: 1;
+}
+
+.positionD {
+    position: absolute;
+    left: 225.37px;
+    top: 64px;
+    background: #7FC2F4;
+    transform: rotate(17.81deg);
+}
+
+.positionE{
+    position: absolute;
+    left: 427px;
+    top: 164px;
+    background: #FF2F2F;
 }
