@@ -7,7 +7,7 @@ export const Intro: React.FC = () => {
     return (
         <div className='intro'>
             <img src={welcome} />
-            <IntroRectangle className="positionA" shape="ellipse" size="medium"></IntroRectangle>
+            <IntroRectangle className="positionA" shape="ellipse" size="large" />
             <IntroRectangle className="positionB" shape="ellipse" size="medium" />
             <IntroRectangle className={'positionC'} size="small" shape="ellipse" />
             <IntroRectangle className="positionD" size="medium" shape="circle" />
@@ -15,8 +15,7 @@ export const Intro: React.FC = () => {
             <IntroRectangle className="positionF" shape="circle" size="small" />
             <IntroRectangle className={'positionG'} shape="ellipse" size="medium" />
             <IntroRectangle className="positionH" shape="circle" size="large" />
-            <IntroRectangle className="positionI" shape="ellipse" />
-            <IntroRectangle className='positionJ' shape="ellipse" size="medium" />
+            <IntroRectangle className="positionI" shape="ellipse" size="medium" />
         </div>
     )
 };

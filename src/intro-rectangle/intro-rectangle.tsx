@@ -11,7 +11,6 @@ export const IntroRectangle: React.FC<IntroRectabngleProps> = ({
     className='rectangle',
     size = 'small',
     shape = 'circle'
-
 }) => {
     const [visible, setVisible] = useState(true);
 
