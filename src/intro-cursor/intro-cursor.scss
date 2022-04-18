@@ -1,0 +1,8 @@
+.intro-cursor {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    background: #ccc;
+    border-radius: 50%;
+    pointer-events: none;
+}
