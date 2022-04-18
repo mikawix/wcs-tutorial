@@ -15,6 +15,8 @@ export const Intro: React.FC = () => {
             <IntroRectangle className="positionF" shape="circle" size="small" />
             <IntroRectangle className={'positionG'} shape="ellipse" size="medium" />
             <IntroRectangle className="positionH" shape="circle" size="large" />
+            <IntroRectangle className="positionI" shape="ellipse" />
+            <IntroRectangle className='positionJ' shape="ellipse" size="medium" />
         </div>
     )
 };

@@ -39,7 +39,7 @@ img {
 
 .positionD {
     position: absolute;
-    left: 225.37px;
+    left: 219.37px;
     top: 64px;
     background: #7FC2F4;
     transform: rotate(17.81deg);
@@ -64,7 +64,7 @@ img {
 .positionG{
     position: absolute;
     left: 24.01px;
-    top: 176.24px;
+    top: 166.24px;
     background: #7FC2F4;
     transform: rotate(-17.69deg);
 }
@@ -76,4 +76,21 @@ img {
     background: #FFB615;
     border-radius: 100px;
     z-index: 2;
+}
+
+.positionI{
+    position: absolute;
+    left: 192.01px;
+    top: 148px;
+    background: #FF5B2B;
+    z-index: 1;
+}
+
+.positionJ{
+    position: absolute;
+    left: 233px;
+    top: 208px;
+    background: #6A55A2;
+    transform: rotate(-13.87deg)
+    z-index: 1 ;
 }
