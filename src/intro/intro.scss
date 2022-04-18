@@ -47,7 +47,33 @@ img {
 
 .positionE{
     position: absolute;
-    left: 427px;
-    top: 164px;
+    left: 60px;
+    top: 113px;
     background: #FF2F2F;
+    z-index: 3;
+}
+
+.positionF{
+    position: absolute;
+    left: 143.01px;
+    top: 106px;
+    background: #F486C9;
+    z-index: 1;
+}
+
+.positionG{
+    position: absolute;
+    left: 24.01px;
+    top: 176.24px;
+    background: #7FC2F4;
+    transform: rotate(-17.69deg);
+}
+
+.positionH{
+    position: absolute;
+    left: 99.01px;
+    top: 140px;
+    background: #FFB615;
+    border-radius: 100px;
+    z-index: 2;
 }
