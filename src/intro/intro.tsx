@@ -7,7 +7,7 @@ export const Intro: React.FC = () => {
     return (
         <div className='intro'>
             <img src={welcome} />
-            <IntroRectangle shape="ellipse" size="small" className="positionA" />
+            <IntroRectangle className="positionA" shape="ellipse" size="small"></IntroRectangle>
         </div>
     )
 };

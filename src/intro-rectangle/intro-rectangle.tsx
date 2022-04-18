@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './intro-rectangle.scss';
 
 export interface IntroRectabngleProps {
@@ -13,7 +13,10 @@ export const IntroRectangle: React.FC<IntroRectabngleProps> = ({
     shape = 'circle'
 
 }) => {
+    const [visible, setVisible] = useState(true);
+
     let recClass: string = 'rectangle';
+    
     switch (size) {
         case 'small':
             recClass = shape === 'circle' ? 'smallCircle' : 'smallEllipse'
@@ -27,6 +30,6 @@ export const IntroRectangle: React.FC<IntroRectabngleProps> = ({
     }
 
     return (
-        <div className={recClass+" "+className}></div>
+        visible ? <div onMouseEnter={() => setVisible(false)} className={recClass+" "+className}></div> : <span/>
     );
 };
