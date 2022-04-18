@@ -28,6 +28,8 @@ export const Intro: React.FC = () => {
             <IntroRectangle backgroundColor="#FF5B2B" size="small" shape="circle" left={230} top={367} zIndex={1} />
             <IntroRectangle backgroundColor="#90D3AA" left={176} shape="ellipse" size="medium" top={392} angle={18} />
             <IntroRectangle backgroundColor="#A09D2A" left={26} shape="ellipse" size="medium" top={367} angle={12} />
-            <IntroRectangle backgroundColor="#7FC2F4" size="medium" shape="circle" left={62} top={415} /></div>
+            <IntroRectangle backgroundColor="#7FC2F4" size="medium" shape="circle" left={62} top={415} />
+            <IntroRectangle backgroundColor="#F486C9" />
+        </div>
     )
 };
