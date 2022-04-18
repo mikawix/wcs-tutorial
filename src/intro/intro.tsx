@@ -1,10 +1,13 @@
 import React from 'react';
 import './intro.scss';
 import welcome from '../assets/welcome.png';
+import { IntroRectangle } from '../intro-rectangle/intro-rectangle';
 
 export const Intro: React.FC = () => {
     return (
         <div className='intro'>
-            <img src={welcome} /></div>
+            <img src={welcome} />
+            <IntroRectangle shape="ellipse" size="small" className="positionA" />
+        </div>
     )
 };

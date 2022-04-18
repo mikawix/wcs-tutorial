@@ -10,30 +10,12 @@ img {
     object-position: top;
 }
 
-.circleS {
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    background: #FF2F2F;
+.positionA {
+position: absolute;
+left: 373px;
+top: 169.09px;
+background: #B6C1F0;
+transform: rotate(-37.07deg);
 }
 
-.circleM {
-    width: 85px;
-    height: 85px;
-    border-radius: 100px;
-    background: #268040;
-}
-
-.flexRow {
-    display: flex;
-    flex-direction: row;
-}
-
-.circleL {
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
-    background: #FFB615;
-}
-
-.ellipseS {}
+.positionB {}

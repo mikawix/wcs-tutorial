@@ -2,11 +2,13 @@ import React from 'react';
 import './intro-rectangle.scss';
 
 export interface IntroRectabngleProps {
+    className?: 'string';
     size?: 'small' | 'medium' | 'large';
     shape?: 'circle' | 'ellipse';
 }
 
 export const IntroRectangle: React.FC<IntroRectabngleProps> = ({
+    className='rectangle',
     size = 'small',
     shape = 'circle'
 
@@ -22,12 +24,9 @@ export const IntroRectangle: React.FC<IntroRectabngleProps> = ({
         case 'large':
             recClass = shape === 'circle' ? 'largeCircle' : 'largeEllipse'
             break;
-        default:
-            recClass = 'rectangle'
-            break;
     }
-    
+
     return (
-        <div className={recClass}></div>
+        <div className={recClass+" "+className}></div>
     );
 };
