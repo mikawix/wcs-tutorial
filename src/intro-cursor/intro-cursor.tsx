@@ -1,38 +1,33 @@
-import {useEffect, useState, useRef} from 'react';
+import {useEffect, useRef} from 'react';
 import './intro-cursor.scss';
 
+function lerp(start: number, stop: number, amount: number) {
+    return (1 - amount) * start + amount * stop;
+}
+
+function renderCircles(count: number) {
+    const circles = [];
+    for (let i = 0; i < count; i++) {
+        const scale = lerp(30, 1, (i / (count - 1)) ** 1.3);
+        const transitionDuration = i * 50 + 'ms';
+        const transform = `translate(var(--x), var(--y)) scale(${scale})`;
+        const style = {transitionDuration, transform};
+        circles.push(<div key={i} style={style} />);
+    }
+    return circles;
+}
+
+const circles = renderCircles(12);
+
 export function IntroCursor() {
-    const circleCount = 10;
-    const mouseCoords = useRef({x: 0, y: 0});
-
-    const [circles, setCircles] = useState(() => Array.from({length: circleCount}, () => ({x: 0, y: 0})));
-
+    const root = useRef<HTMLDivElement>(null);
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
-            mouseCoords.current = {x: e.clientX, y: e.clientY};
+            root.current?.style.setProperty('--x', e.clientX + 'px');
+            root.current?.style.setProperty('--y', e.clientY + 'px');
         };
         window.addEventListener('mousemove', handleMouseMove);
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
+        return () => window.removeEventListener('mousemove', handleMouseMove);
     }, []);
-
-    useEffect(() => {
-        const handleInterval = () => {
-            const {x, y} = mouseCoords.current;
-            setCircles((prev) => [{x, y}, ...prev].slice(0, circleCount));
-        };
-        const interval = setInterval(handleInterval, 16);
-        return () => {
-            clearInterval(interval);
-        };
-    });
-
-    const circleElements = circles.map(({x, y}, i) => {
-        const scale = (30 * (circleCount - i)) / circleCount;
-        const style = {left: x, top: y, transform: `scale(${scale})`};
-        return <div key={i} className="intro-cursor" style={style} />;
-    });
-
-    return <>{circleElements}</>;
+    return <div ref={root} className="cursor" children={circles} />;
 }
